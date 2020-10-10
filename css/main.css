@@ -46,7 +46,6 @@ main {
 
   display:grid;
   grid-template-columns: 1fr 200px;
-  grid-template-columns: 2fr 1fr ;
   grid-template-rows:    150px 1fr 100px;
   grid-auto-rows:min-content;
   grid-gap:2rem;
