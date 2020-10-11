@@ -90,7 +90,7 @@ h2 {
 }
 h3 {
   font-size:1.5rem;
-  font-weight:300;
+  font-weight:500;
 
 }
 h4 {
@@ -113,6 +113,7 @@ p {
 
 .location {
   font-size: 1rem;
+  font-weight: 500;
   font-family: 'work Sans', sans-serif;
   text-transform: uppercase;
   line-height: 1.5;
