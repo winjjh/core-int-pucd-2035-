@@ -63,7 +63,7 @@ main {
 }
 
 .item {
-  grid-column:1;
+  grid-column:2;
   border-top: 1px solid #ccc;
   padding: 1rem 0;
 }
@@ -90,7 +90,7 @@ h2 {
 }
 h3 {
   font-size:1.5rem;
-  font-weight:400;
+  font-weight:200;
 
 }
 h4 {
@@ -127,7 +127,7 @@ img {
 
 figcaption {
   font-size: .875rem;
-  font-weight: 200;
+  font-weight: 250;
   font-family: 'work Sans', sans-serif;
   padding-top: 1rem;
 }
