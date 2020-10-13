@@ -27,6 +27,7 @@ html {
 }
 
 body {
+  background-color: linear-gradient( to bottom, blue, white );
   padding:5rem 0;
   color:#333F48;
 }
