@@ -23,12 +23,11 @@ html {
 html {
   font-size: 1rem;
   font-family: 'work sans', serif;
-  background-color: #eaeaea;
+  background-color:#fffcdc
 }
 
 body {
-  background-color: linear-gradient (to bottom, aquamarine, white );}
- {padding:5rem 0;
+  padding:5rem 0;
   color:#333F48;
 }
 

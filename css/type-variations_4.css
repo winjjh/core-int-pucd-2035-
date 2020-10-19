@@ -1,0 +1,144 @@
+
+
+
+html {
+  font-size: 1rem;
+  font-family: 'EB Garamond', serif;
+  background-color: #fff;
+}
+
+body {
+  padding:5rem 0;
+  color:#000;
+}
+
+a {
+  text-decoration: underline;
+  color: #ae7f3d;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #ae7f3d;
+}
+
+main {
+   display: grid;
+    grid-gap: 10px;
+        grid-template-columns: [col] 100px [col] 100px [col] 100px [col] 100px  ;
+        grid-template-rows: [row] auto [row] auto [row] ;
+}
+
+
+
+.intro-block {
+   grid-column: col / span 2;
+        grid-row: row ;
+  padding:10px 
+}
+
+.article {
+  grid-column: col 4 / span 3 ;
+        grid-row: row ;
+}
+
+.article2 {
+  grid-column: col 3 /span 2;
+        grid-row: row 2 ;
+  text-align: center; 
+  padding:5px
+  
+}
+
+.article3 {
+  grid-column: col 5/ span 3 ;
+        grid-row: row 2 ;
+}
+
+.article4 {
+    grid-column: col 4/ span 4;
+    grid-row: row 3;
+    padding:10px
+    }
+
+.projects {
+  grid-column:2 / 3;
+}
+
+.item {
+  grid-column:1;
+  border-top: 1px solid #ccc;
+  padding: 1rem 0;
+}
+
+.definition {
+  grid-column:2;
+  border-top: 1px solid #ccc;
+  padding: 1rem 0;
+}
+
+
+
+h1, h2, h3, h4, h5 {
+  font-family: 'EB Garamond', serif;
+  margin-bottom:1rem;
+}
+
+h1 {
+  font-size:3.375rem;
+  font-weight:700;
+  font-style: italic;
+}
+h2 {
+  font-size:2.25rem;
+}
+h3 {
+  font-size:1.5rem;
+  font-weight:400;
+
+}
+h4 {
+  font-size:1rem;
+}
+
+
+li {
+  font-size: 1.25rem;
+  font-family: 'Lora', serif;
+  line-height: 1.5;
+  padding: .5rem 0;
+}
+
+p {
+  font-family: 'Spartan', sans-serif;
+  font-size: 1.125rem;
+  font-weight:200;
+  line-height: 1.5;
+  margin-bottom:1rem;
+}
+
+.location {
+  font-size: 1rem;
+  font-family: 'Lora', serif;
+  text-transform: uppercase;
+  line-height: 1.5;
+}
+
+.pull-quote {
+  font-size: 1.50rem;
+  font-family: 'EB Garamond', serif;
+  line-height: 1.5;
+  font-weight:400;
+  padding:1rem;
+}
+
+img {
+  display: block;
+  margin: 0 auto;
+}
+
+figcaption {
+  font-size: .875rem;
+  font-family: 'Lora', serif;
+  padding-top: 1rem;
+}
