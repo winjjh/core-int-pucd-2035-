@@ -35,7 +35,7 @@ body {
   margin: 0 auto;
 }
 
-h1, h2 {
+h1, h2, h3 {
   font-family: 'work Sans', sans-serif;
   margin-bottom:1rem;
 }
@@ -47,4 +47,9 @@ h1 {
 h2 {
   font-size:1.5rem;
   font-weight:300;
-}
+  }
+  
+  h3 {
+  font-size:1.5rem;
+  font-weight:300;
+  }
