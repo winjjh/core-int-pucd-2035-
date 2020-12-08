@@ -24,39 +24,118 @@
   <meta name="theme-color" content="#fafafa">
 </head>
 
-<body>
 
 
-<title>nav bar</title>
-<script src="https://kit.fontawesome.com/3292d88ecc.js" 
-crossorigin="anonymous"></script>
-<script src="main.js" defer=""></script>
 
-  <nav class="navbar">
-    <div class="navbar_logo">
-      <i class="fas fa-candy-cane"></i>
-      <a href="">Jong Hee</a>
-    </div>
+<style>
+* {padding:0;margin:0;}
+body {background:#fff;}
+header {width:100%;background:#E1F5A9;position:relative;z-index:10;}
+.header-list {width:1200px;margin:0 auto;font-size:0;padding:15px 0;}
+.header-list > li {font-size:12px;display:inline-block;vertical-align:middle;}
+.header-list > li:nth-child(1) {font-size:20px;width:200px;}
+.header-list > li:nth-child(2) {width:calc(100% - 250px);}
+.header-list > li:nth-child(3) {width:50px;}
+.header-list > li > div {width:auto;}
 
-    <ul class="navbar_menu">
-           <li><a href="projects/index.html">Type variations</a></li>
-            <li><a href="projects/index.html">Living Collection</a></li>
-            <li><a href="projects/index.html">p5js</a></li>
-            <li><a href="projects/typejs/index.html">typejs</a></li>
-            <li><a herf=""></a></li> 
+.menu-ul {font-size:0;}
+.menu-ul > li {font-size:12px;display:inline-block;vertical-align:middle;}
+.menu-ul > li > a {display:block;width:auto;padding:15px;}
 
-      </ul>
+input[id="menuicon"] {display:none;}
+input[id="menuicon"] + label {display:block;position:relative;width:100%;height:40px;cursor:pointer;}
+input[id="menuicon"] + label span {display:block;position:absolute;width:100%;height:3px;border-radius:30px;background:#fffcdc;transition:all .35s;}
+input[id="menuicon"] + label span:nth-child(1) {top:10%;}
+input[id="menuicon"] + label span:nth-child(2) {top:50%;transform:translateY(-50%);} /* ºñ½ÁÇÏ°Ô »ç¿ëÇÒ ¼ö ÀÖ´Â style top:calc(50% - 2.5px); margin-top:-2.5px;*/
+input[id="menuicon"] + label span:nth-child(3) {bottom:10%;}
+input[id="menuicon"]:checked + label {z-index:2;}
+input[id="menuicon"]:checked + label span:nth-child(1) {top:50%;transform:translateY(-50%) rotate(45deg);}
+input[id="menuicon"]:checked + label span:nth-child(2) {opacity:0;}
+input[id="menuicon"]:checked + label span:nth-child(3) {bottom:50%;transform:translateY(50%) rotate(-45deg);}
+div[class="sidebar"] {width:100%;height:0px;background:#aaa;position:fixed;top:76px;left:0;z-index:1;transition:all .35s;overflow:hidden;}
+input[id="menuicon"]:checked + label + div {height:300px;}
 
-    <ul class="navbar_icons">
-      <li><i class="fab fa-twitter"></i></li>
-      <li><i class="fas fa-hashtag"></i></li>
-
-    </ul>
-      <a herf="#" class="navbar_toggleBtn"></a>
-        <i class="fas fa-bars"></i>
+.sitemap-ul {font-size:0;width:1200px;margin:15px auto;text-align:center;}
+.sitemap-ul > li {font-size:12px;display:inline-block;vertical-align:top;width:20%;}
 
 
-        </nav>
+</style>
+<header>
+  <ul class="header-list">
+    <li><div>Jonghee</div></li>
+    <li>
+      <div>
+        <ul class="menu-ul">
+          <li><a href="projects/collection/living-collection.html">collection</a></li>
+          <li><a href="projects/typejs/index.html">typejs</a></li>
+          <li><a href="#">menu03</a></li>
+          <li><a href="#">menu04</a></li>
+          <li><a href="#">menu05</a></li>
+          <li><a href="#">menu06</a></li>
+        </ul>
+      </div>
+    </li>
+    <li>
+      <div>
+        <input type="checkbox" id="menuicon">
+        <label for="menuicon">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+        <div class="sidebar">
+          <ul class="sitemap-ul">
+            <li><a href="#">Type variations</a>
+              <ul>
+             <li><a href="projects/type-variations/article-standard.html">Type standard</a></li>
+            <li><a href="projects/type-variations/article-standard_2.html">Type standard_2</a></li>
+            <li><a href="projects/type-variations/article-standard_3.html">Type standard_3</a></li>
+            <li><a href="projects/type-variations/article-standard_4.html">Type standard_4</a></li>
+            <li><a href="projects/type-variations/article-standard_5.html">Type standard_5</a></li>
+              
+              </ul>
+            </li>
+
+            <li><a href="#">Type Variattions 2</a>
+              <ul>
+                <li><a href="projects/type-variations/article-expressive.html">Type expressive</a></li>
+     <li><a href="projects/type-variations/article-expressive_2.html">Type expressive_2</a></li>   
+     <li><a href="projects/type-variations/article-expressive_3.html">Type expressive_3</a></li>   
+     <li><a href="projects/type-variations/article-expressive_4.html">Type expressive_4</a></li>   
+     <li><a href="projects/type-variations/article-expressive_5.html">Type expressive_5</a></li>
+              </ul>
+            </li>
+
+            <li><a href="#">p5js</a>
+              <ul>
+              <li><a href="projects/p5js/kaleidoscope/index.html">kaleidoscope</a></li>
+              <li><a href="projects/p5js/drawing-lines/index.html">drawing-lines</a></li>
+              <li><a href="projects/p5js/flocking/index.html">flocking</a></li>
+              </ul>
+            </li>
+
+            <li><a href="#">Now</a>
+              <ul>
+                <li><a href="projects/now/index.html">now</a></li>
+                
+              </ul>
+            </li>
+            <li><a href="#">Portfolio</a>
+              <ul>
+                <li><a href="#">05-01</a></li>
+                <li><a href="#">05-02</a></li>
+                <li><a href="#">05-03</a></li>
+                <li><a href="#">05-04</a></li>
+                <li><a href="#">05-05</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>      
+      </div>
+    </li>
+  </ul>
+
+
 
 
   <main>
