@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000;
+}
+h1 {
+font-family: 'Merriweather Sans', sans-serif;
+color: white;
+font-size: 5rem;
+letter-spacing: 3px;
+background: url("https://www.xmple.com/wallpaper/pink-lines-stripes-blue-streaks-1920x1080-c2-b0e0e6-ff69b4-l2-201-201-a-210-f-1.svg");
+-webkit-background-clip: text;
+background-clip: text;
+-webkit-text-fill-color: transparent;
+animation: animated  7s linear infinite;
+}
+@keyframes animated {
+  from {background-position: 0% 50%;
+  }
+  to{
+    background-position: 100% 50% 0%;
+  }
+}
